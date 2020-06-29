@@ -1,7 +1,5 @@
 <?php
 
-$DATABASE_URL=parse_url('remotemysql.com');
-
 return [
 
     /*
@@ -44,11 +42,11 @@ return [
 
         'mysql' => [
             'driver' => 'mysql',
-            'host' => $DATABASE_URL["host"],
-            'port' => $DATABASE_URL["port"],
-            'database' => ltrim($DATABASE_URL["path"], "/"),
-            'username' => $DATABASE_URL["user"],
-            'password' => $DATABASE_URL["pass"],
+            'host' => 'remotemysql.com',
+            'port' =>'3306',
+            'database' => '6InoAlKaFU',
+            'username' => '6InoAlKaFU',
+            'password' => 'dSmKw1q2g7',
             'charset' => 'utf8mb4',
             'collation' => 'utf8mb4_unicode_ci',
             'prefix' => '',
